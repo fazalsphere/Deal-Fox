@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal Fox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <img src="Assets/Icons/hero-logo.svg" alt="Dealfox Logo" class="logo">
+        
+        <!-- Centered Navigation Links -->
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Deals</a>
+            <a href="#">Available soon</a>
+            <a href="#">Community</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <a href="#" class="login-btn">Login</a>
+    </nav>
+
+     <!-- hero section -->
+
+
+     <section class="hero">
+        <div class="hero-content">
+            <p class="start-line">100% free, no obligation</p>
+            <h1 class="hero-title">New awesome<br>deals every week</h1>
+            <p class="hero-text">Exclusive top deals for cars, food & experiences - only for Switzerland</p>
+            <button class="cta-btn">Register now</button>
+        </div>
+        
+        <!-- Updated hero cards container -->
+        <div class="hero-cards">
+            <div class="card card-model">
+                <img src="Assets/Images/Model.png" alt="Deal card">
+            </div>
+            <div class="card card-car">
+                <img src="Assets/Images/Car.png" alt="Deal card">
+            </div>
+            <div class="card card-guitar">
+                <img src="Assets/Images/Guitair.png" alt="Deal card">
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Highlight Deals Section -->
+    <section class="highlight-deals">
+        <div class="section-header">
+            <h2 class="hero-title">Top Highlight Deals</h2>
+        </div>
+
+        <div class="deals-grid">
+            <!-- Deal Card 1 -->
+            <div class="deal-card">
+                <div class="card-image">
+                    <img src="Assets/Images/Lamborgini.png" alt="Deal 1">
+                    <span class="deal-tag">Top Deal</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 2 slots left!</span>
+                        <h3>Lamborghini Revuelto</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here... </p>
+                    </div>
+                    <span class="price">600</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Deal Card 2 -->
+            <div class="deal-card">
+                <div class="card-image">
+                    <img src="Assets/Images/Pizzapng.png" alt="Deal 2">
+                    <span class="deal-tag">Top Deal</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 1 slots left!</span>
+                        <h3>Pizza Restaurant</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here... </p>
+                    </div>
+                    <span class="price">76</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Deal Card 3 -->
+            <div class="deal-card">
+                <div class="card-image">
+                    <img src="Assets/Images/Bently batur.png" alt="Deal 3">
+                    <span class="deal-tag">Top Deal</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 16 slots left!</span>
+                        <h3>Bently batur</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here... </p>
+                    </div>
+                    <span class="price">800</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Deal Card 4 -->
+            <div class="deal-card">
+                <div class="card-image">
+                    <img src="Assets/Images/Football.png" alt="Deal 4">
+                    <span class="deal-tag">Top Deal</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 5 slots left!</span>
+                        <h3>2 Tickets Switzerland vs. Norway</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here... </p>
+                    </div>
+                    <span class="price">25</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weitere Deals Section -->
+    <section class="weitere-deals">
+        <div class="section-header">
+            <h2 class="hero-title">Weitere Deals</h2>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="filter-nav">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="auto">Auto</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="freizeit">Freizeit</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
+        </div>
+
+        <div class="deals-grid">
+            <!-- Food Category -->
+            <div class="deal-card" data-category="food">
+                <div class="card-image">
+                    <img src="Assets/Images/fires.png" alt="Loaded fries">
+                    <span class="deal-tag-today">Today Only</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 20 slots left!</span>
+                        <h3>Loaded fries</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here...</p>
+                    </div>
+                    <span class="price">600</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Freizeit Category -->
+            <div class="deal-card" data-category="freizeit">
+                <div class="card-image">
+                    <img src="Assets/Images/Rhino rare piece.png" alt="Rhino rare piece">
+                    <span class="deal-tag-today">Today Only</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 9 slots left!</span>
+                        <h3>Rhino rare piece</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here...</p>
+                    </div>
+                    <span class="price">76</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Auto Category -->
+            <div class="deal-card" data-category="auto">
+                <div class="card-image">
+                    <img src="Assets/Images/porsche 911.png" alt="Porsche 911">
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 5 slots left!</span>
+                        <h3>Porsche 911</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here...</p>
+                    </div>
+                    <span class="price">420</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Tech Category -->
+            <div class="deal-card" data-category="tech">
+                <div class="card-image">
+                    <img src="Assets/Images/headphones.jpg" alt="headphones">
+                    <span class="deal-tag-new">New</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 1 slots left!</span>
+                        <h3>Wireless Headphones</h3>
+                        <p class="description">Wireless, noise-cancelling headphones with a sleek design and comfortable fit.</p>
+                    </div>
+                    <span class="price">89</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Additional Auto Cards -->
+            <div class="deal-card" data-category="auto">
+                <div class="card-image">
+                    <img src="Assets/Images/Bently batur.png" alt="BMW M4">
+                    <span class="deal-tag-new">New</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 3 slots left!</span>
+                        <h3>BMW M4 Competition</h3>
+                        <p class="description">Experience pure driving pleasure with the ultimate sports car...</p>
+                    </div>
+                    <span class="price">550</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Additional Food Cards -->
+            <div class="deal-card" data-category="food">
+                <div class="card-image">
+                    <img src="Assets/Images/Pizzapng.png" alt="Gourmet Restaurant">
+                    <span class="deal-tag-today">Today Only</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 8 slots left!</span>
+                        <h3>Gourmet Restaurant</h3>
+                        <p class="description">Exclusive 5-course menu at a Michelin-starred restaurant...</p>
+                    </div>
+                    <span class="price">180</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Additional Freizeit Cards -->
+            <div class="deal-card" data-category="freizeit">
+                <div class="card-image">
+                    <img src="Assets/Images/Football.png" alt="Skydiving">
+                    <span class="deal-tag-new">New</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 12 slots left!</span>
+                        <h3>Skydiving Adventure</h3>
+                        <p class="description">Experience the thrill of freefall with professional instructors...</p>
+                    </div>
+                    <span class="price">299</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+
+            <!-- Additional Tech Cards -->
+            <div class="deal-card" data-category="tech">
+                <div class="card-image">
+                    <img src="Assets/Images/gaming pc.jpg" alt="Gaming Setup">
+                    <span class="deal-tag-new">New</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 4 slots left!</span>
+                        <h3>Pro Gaming Setup</h3>
+                        <p class="description">Complete gaming station with the latest hardware...</p>
+                    </div>
+                    <span class="price">1200</span>
+                    <button class="card-btn"><span class="card-btn-text">Secure now</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="how-it-works fade-in">
+        <h2 class="section-title">How it Works</h2>
+        <p class="section-description">So funktioniert's – in 30 Sekunden erklärt</p>
+        
+        <div class="video-container">
+            <video id="howItWorksVideo" controls>
+                <source src="Assets/Videos/how it works.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="play-button" id="playButton">
+                <img src="Assets/Icons/hero-video.svg" alt="Play video">
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Deals Section -->
+    <section class="highlight-deals">
+        <div class="section-header">
+            <h2 class="hero-title">Upcoming Deals</h2>
+        </div>
+
+        <div class="deals-grid">
+            <!-- Deal Card 1 -->
+            <div class="deal-card">
+                <div class="card-image">
+                    <img src="Assets/Images/Unique luxury handbag.png" alt="Deal 1">
+                    <span class="deal-tag-upcoming">2 days left</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 2 slots left!</span>
+                        <h3>Lamborghini Revuelto</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here... </p>
+                    </div>
+                    <span class="price">600</span>
+                    <button class="card-btn"><span class="card-btn-text">Activate deal alert</span></button>
+                </div>
+            </div>
+
+            <!-- Deal Card 2 -->
+            <div class="deal-card">
+                <div class="card-image">
+                    <img src="Assets/Images/elephent.png" alt="Deal 2">
+                    <span class="deal-tag-upcoming">1 week left</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 1 slots left!</span>
+                        <h3>Pizza Restaurant</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here... </p>
+                    </div>
+                    <span class="price">76</span>
+                    <button class="card-btn"><span class="card-btn-text">Activate deal alert</span></button>
+                </div>
+            </div>
+
+            <!-- Deal Card 3 -->
+            <div class="deal-card">
+                <div class="card-image">
+                    <img src="Assets/Images/Electric guitar.png" alt="Deal 3">
+                    <span class="deal-tag-upcoming">1 month left</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 16 slots left!</span>
+                        <h3>Bently batur</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here... </p>
+                    </div>
+                    <span class="price">800</span>
+                    <button class="card-btn"><span class="card-btn-text">Activate deal alert</span></button>
+                </div>
+            </div>
+
+            <!-- Deal Card 4 -->
+            <div class="deal-card">
+                <div class="card-image">
+                    <img src="Assets/Images/Wooden chess set.png" alt="Deal 4">
+                    <span class="deal-tag-upcoming">2 hours left</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-header">
+                        <span class="slot-tag">Only 5 slots left!</span>
+                        <h3>2 Tickets Switzerland vs. Norway</h3>
+                        <p class="description">A small subheading two or three lines about the product goes here... </p>
+                    </div>
+                    <span class="price">25</span>
+                    <button class="card-btn"><span class="card-btn-text">Activate deal alert</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What our clients say Section -->
+    <section class="testimonials">
+        <h2 class="section-title">What our clients say</h2>
+
+        <!-- Testimonials Slider -->
+        <div class="swiper testimonials-slider">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="Assets/Images/daniel.jpg" alt="Mary Cruz" class="client-image">
+                        <div class="star-rating">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                        </div>
+                        <p class="testimonial-text">
+                            "Dealfox is my go-to for unbeatable Swiss deals! Found <span class="highlight">50% off at my favorite</span> restaurant – no subscription needed. Fast, reliable, and 100% local. Highly recommend!"
+                        </p>
+                        <div class="client-info">
+                            <h4>Mary Cruz</h4>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <img src="Assets/Images/david.jpg" alt="James David" class="client-image">
+                        <div class="star-rating">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                            <img src="Assets/Icons/Star Icon.svg" alt="star">
+                        </div>
+                        <p class="testimonial-text">
+                            "Love how Dealfox highlights limited-time offers. Scored VIP concert tickets for half-price! The deal alerts are a game-changer. Trustworthy and easy to use."
+                        </p>
+                        <div class="client-info">
+                            <h4>James David</h4>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Why Choose Dealplattform.ch Section -->
+    <section class="why-choose">
+        <h2 class="section-title">Why Choose Deal Fox?</h2>
+        
+        <div class="features-container">
+            <!-- Feature Card 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="Assets/Icons/swiss.svg" alt="Swiss Icon">
+                </div>
+                <p class="feature-text">100% Swiss Providers</p>
+            </div>
+
+            <!-- Feature Card 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="Assets/Icons/top ratings.svg" alt="Star Rating Icon">
+                </div>
+                <p class="feature-text">Top Customer Ratings</p>
+            </div>
+
+            <!-- Feature Card 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="Assets/Icons/no.svg" alt="No Subscription Icon">
+                </div>
+                <p class="feature-text">No Subscription – No Commitment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Brand Section -->
+            <div class="footer-column brand-section">
+                <img src="Assets/Icons/hero-logo.svg" alt="Dealfox Logo" class="footer-logo">
+                <p class="brand-tagline">Schweizer Platform for Schweizer Deals</p>
+                <p class="brand-description">Our platform offers buying products through bidding which enables users to purchase products according to their capabilities.</p>
+                <div class="swiss-badge">
+                    <img src="Assets/Icons/badge.png" alt="Swiss Badge" class="swiss-badge-icon">
+                </div>
+            </div>
+
+            <!-- Legal Links -->
+            <div class="footer-column legal-links">
+                <h4>Legal links</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-column newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <div class="newsletter-form">
+                    <div class="input-wrapper">
+                        <input type="email" placeholder="Type your e-mail">
+                        <button type="submit">
+                            <img src="Assets/Icons/arrow.svg" alt="Subscribe">
+                        </button>
+                    </div>
+                    <p class="newsletter-disclaimer">Subscribe to our newsletter get weekly offers directly into your email</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="#" aria-label="Instagram">
+                <img src="Assets/Icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" aria-label="Twitter">
+                <img src="Assets/Icons/twitter.svg" alt="Twitter">
+            </a>
+            <a href="#" aria-label="Facebook">
+                <img src="Assets/Icons/facebook.svg" alt="Facebook">
+            </a>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="copyright-bar">
+            <p>Copyright by Dealfox © 2025</p>
+        </div>
+    </footer>
+
+    <!-- Add JavaScript -->
+    <!-- Add Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
