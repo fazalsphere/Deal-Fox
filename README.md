@@ -38,7 +38,7 @@ This project includes a simple yet effective **deal filter system** using vanill
 
 ## 📸 Preview
 
-![Screenshot](https://via.placeholder.com/800x400.png?text=Screenshot+Coming+Soon)
+![Screenshot](https://github.com/fazalsphere/Deal-Fox/blob/main/Screenshot.png)
 
 ---
 
