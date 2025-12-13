@@ -10,7 +10,7 @@
 /* Updated Navigation Styles */
 .main-nav {
     display: flex;
-    justify-content: space-between; /* Keep logo and login at edges */
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
     background: rgba(255, 255, 255, 0.95);
@@ -22,13 +22,11 @@
 
 .nav-links {
     display: flex;
-    gap: 32px; /* Spacing between nav items from Figma */
+    gap: 32px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     align-items: center;
-    
-
 }
 
 .nav-links a {
@@ -45,7 +43,6 @@
     display: inline-block;
 }
 
-/* Specific style for "Bald verfügbar" */
 .nav-links a[href="#"]:nth-child(3) {
     width: auto;
     padding: 0 24px;
@@ -63,7 +60,6 @@
     color: white;
 }
 
-/* Style for the login button */
 .login-btn {
     padding: 11px 24px;
     border-radius: 26px;
@@ -75,9 +71,13 @@
     text-decoration: none;
 }
 
+.logo {
+    cursor: pointer;
+}
+
+/* Hero Section */
 .hero {
     background: #F8F7F6;
-
     max-width: 100%;
     margin: 0 auto;
     display: flex;
@@ -86,13 +86,13 @@
     justify-content: center;
     text-align: center;
     color: #100F0E;
-    padding-top: 80px; /* Offset for fixed nav */
+    padding-top: 80px;
 }
 
 .hero-content {
     max-width: 576px;
-    padding: 0;
-    margin-bottom: 80px; /* Add consistent spacing between content and cards */
+    padding: 0 20px;
+    margin-bottom: 80px;
     margin-top: 80px;
 }
 
@@ -105,13 +105,12 @@
 
 .hero-title {
     font-size: 72px;
-    margin-top : 16px;
+    margin-top: 16px;
     font-weight: normal;
     line-height: 78px;
     letter-spacing: -3.6px;
     color: #100F0E;
 }
-
 
 .hero-text {
     color: #58524C;
@@ -168,7 +167,6 @@
     object-fit: cover;
 }
 
-/* Card-specific styles */
 .card-model {
     width: 255.02px;
     height: 326px;
@@ -176,7 +174,7 @@
     opacity: 0;
     transform-origin: left center;
     left: 0;
-    top: 80px; /* Positioned lower than the car card */
+    top: 80px;
     transform: rotate(-10deg);
 }
 
@@ -196,11 +194,10 @@
     opacity: 0;
     transform-origin: right center;
     right: 0;
-    top: 80px; /* Positioned lower than the car card */
+    top: 80px;
     transform: rotate(10deg);
 }
 
-/* Animation keyframes */
 @keyframes left-card-reveal {
     0% {
         opacity: 0;
@@ -223,30 +220,12 @@
     }
 }
 
-/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     .card {
         animation: none !important;
         opacity: 1 !important;
         transform: none !important;
     }
-}
-
-/* Responsive styles just for navigation */
-@media (max-width: 1024px) {
-    .nav-links {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 900px) {
-    .nav-links a {
-        font-size: 14px;
-    }
-}
-
-.logo {
-    cursor: pointer;
 }
 
 /* Top Highlight Deals Section */
@@ -270,21 +249,13 @@
     color: #000000;
 }
 
-.card-content {
-    padding: 24px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px; /* Adjusted for cleaner vertical rhythm */
-}
-
 .deals-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
     max-width: 1400px;
     margin: 0 auto;
-    min-height: 600px; /* Prevent grid collapse during filtering */
+    min-height: 600px;
     position: relative;
 }
 
@@ -342,8 +313,8 @@
     border-radius: 16px;
     font-size: 14px;
     font-weight: normal;
-
 }
+
 .deal-tag-today {
     position: absolute;
     top: 10px;
@@ -368,6 +339,14 @@
     font-weight: normal;
 }
 
+.card-content {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .card-header {
     display: flex;
     flex-direction: column;
@@ -379,7 +358,7 @@
     color: #FF5020;
     font-size: 14px;
     font-style: italic;
-    margin-top: 8px; /* Add space from image */
+    margin-top: 8px;
 }
 
 .card-header h3 {
@@ -399,12 +378,12 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 12px; /* Reduced gap to price */
+    margin-bottom: 12px;
 }
 
 .price {
     margin-top: auto;
-    margin-bottom: 20px; /* Adjusted spacing to button */
+    margin-bottom: 20px;
     font-size: 24px;
     font-weight: 400;
     line-height: 28px;
@@ -433,7 +412,7 @@
 .card-btn {
     width: 277px;
     height: 52px;
-    margin: 0 auto 0; /* Removed bottom margin since price has margin */
+    margin: 0 auto 0;
     background: none;
     border: 0.5px solid #FF6524;
     border-radius: 26px;
@@ -452,11 +431,18 @@
 }
 
 /* Weitere Deals Section */
+.weitere-deals {
+    margin-top: 80px;
+    padding: 80px 80px;
+    background: #FFFFFF;
+}
+
 .filter-nav {
     display: flex;
     gap: 16px;
     justify-content: center;
     margin-bottom: 48px;
+    flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -477,11 +463,24 @@
     color: white;
 }
 
-/* Spacing between sections */
-.weitere-deals {
-    margin-top: 80px;
-    padding: 80px 80px;
-    background: #FFFFFF;
+.weitere-deals .deal-card {
+    opacity: 1;
+    transform: translateY(0);
+    will-change: opacity, transform;
+}
+
+.weitere-deals .deal-card.hidden {
+    display: none;
+}
+
+.weitere-deals .deal-card:not(.hidden):hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.weitere-deals .deals-grid {
+    min-height: 600px;
+    transition: min-height 0.3s ease;
 }
 
 /* How it Works Section */
@@ -489,8 +488,8 @@
     padding: 80px 80px;
     text-align: center;
     background: #FFFFFF;
-    padding-top: 160px; /* Account for fixed nav + section padding */
-    margin-top: -80px; /* Offset the extra padding to maintain section spacing */
+    padding-top: 160px;
+    margin-top: -80px;
 }
 
 .how-it-works .section-title {
@@ -523,7 +522,6 @@
     background: #F8F7F6;
 }
 
-/* Remove the padding-top aspect ratio since we have a fixed height */
 .video-container::before {
     display: none;
 }
@@ -569,7 +567,6 @@
     pointer-events: none;
 }
 
-/* Animation for section fade-in */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -663,7 +660,6 @@
     color: #58524C;
 }
 
-/* Swiper Pagination Customization */
 .swiper-pagination {
     position: relative;
     margin-top: 32px;
@@ -679,18 +675,6 @@
 
 .swiper-pagination-bullet-active {
     background: #FF7220;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .testimonial-card {
-        padding: 24px;
-    }
-
-    .testimonial-text {
-        font-size: 16px;
-        line-height: 24px;
-    }
 }
 
 /* Why Choose Section */
@@ -764,37 +748,6 @@
     margin: 0;
 }
 
-/* Responsive Design for Features */
-@media (max-width: 1024px) {
-    .features-container {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .features-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .feature-card {
-        width: 100%;
-        max-width: none;
-    }
-
-    .why-choose .section-title {
-        font-size: 32px;
-        line-height: 40px;
-        margin-bottom: 32px;
-    }
-
-    .feature-text {
-        font-size: 18px;
-        line-height: 28px;
-    }
-}
-
 /* Footer Styles */
 .main-footer {
     background: #FFFFFF;
@@ -817,7 +770,6 @@
     margin-bottom: 24px;
 }
 
-/* Brand Section */
 .brand-section {
     max-width: 320px;
 }
@@ -849,7 +801,6 @@
     height: 48px;
 }
 
-/* Link Columns */
 .footer-column ul {
     list-style: none;
     padding: 0;
@@ -871,7 +822,6 @@
     color: #FF6423;
 }
 
-/* Newsletter Section */
 .newsletter-form {
     max-width: 100%;
 }
@@ -928,7 +878,6 @@
     line-height: 1.5;
 }
 
-/* Social Links */
 .social-links {
     display: flex;
     justify-content: center;
@@ -955,7 +904,6 @@
     height: 24px;
 }
 
-/* Copyright Bar */
 .copyright-bar {
     text-align: center;
     padding: 24px 0;
@@ -967,68 +915,859 @@
     font-size: 14px;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
+/* ==================== RESPONSIVE BREAKPOINTS ==================== */
+
+/* Large Desktop (1440px - 1920px) */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .deals-grid {
+        max-width: 1600px;
+    }
+}
+
+/* Standard Desktop (1200px - 1439px) */
+@media (max-width: 1439px) {
+    .hero-cards {
+        width: 650px;
+        height: 350px;
+    }
+    
+    .card-model,
+    .card-guitar {
+        width: 220px;
+        height: 280px;
+    }
+    
+    .card-car {
+        width: 340px;
+        height: 300px;
+    }
+}
+
+/* Laptop/Small Desktop (1024px - 1199px) */
+@media (max-width: 1199px) {
+    .hero-title {
+        font-size: 60px;
+        line-height: 66px;
+        letter-spacing: -3px;
+    }
+    
+    .deals-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        max-width: 1100px;
+    }
+    
+    .deal-card {
+        width: 100%;
+        max-width: 325px;
+    }
+    
+    .highlight-deals,
+    .weitere-deals {
+        padding: 60px 40px;
+    }
+    
+    .video-container {
+        height: 500px;
+    }
+}
+
+/* Tablet Landscape (900px - 1023px) */
+@media (max-width: 1023px) {
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .nav-links a {
+        font-size: 14px;
+        width: 85px;
+        height: 48px;
+        line-height: 48px;
+    }
+    
+    .hero-content {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    
+    .hero-title {
+        font-size: 52px;
+        line-height: 58px;
+        letter-spacing: -2.6px;
+    }
+    
+    .hero-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .hero-cards {
+        width: 550px;
+        height: 300px;
+    }
+    
+    .card-model,
+    .card-guitar {
+        width: 180px;
+        height: 230px;
+        top: 70px;
+    }
+    
+    .card-car {
+        width: 300px;
+        height: 260px;
+    }
+    
+    .section-header h2,
+    .how-it-works .section-title,
+    .testimonials .section-title,
+    .why-choose .section-title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    
+    .features-container {
+        padding: 0 20px;
+    }
+}
+
+/* Tablet Portrait (768px - 899px) */
+@media (max-width: 899px) {
+    .main-nav {
+        padding: 1rem 3%;
+    }
+    
+    .nav-links {
+        position: static;
+        transform: none;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .nav-links a {
+        width: auto;
+        padding: 0 16px;
+        font-size: 13px;
+        height: 44px;
+        line-height: 44px;
+    }
+    
+    .login-btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+    
+    .hero-content {
+        max-width: 500px;
+        padding: 0 30px;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: -2.4px;
+    }
+    
+    .hero-text {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    
+    .cta-btn {
+        width: 200px;
+        height: 56px;
+        font-size: 18px;
+    }
+    
+    .hero-cards {
+        width: 500px;
+        height: 280px;
+    }
+    
+    .card-model,
+    .card-guitar {
+        width: 160px;
+        height: 210px;
+        top: 65px;
+    }
+    
+    .card-car {
+        width: 280px;
+        height: 240px;
+    }
+    
+    .deals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .highlight-deals,
+    .weitere-deals {
+        padding: 50px 30px;
+    }
+    
+    .how-it-works {
+        padding: 50px 30px;
+        padding-top: 130px;
+    }
+    
+    .video-container {
+        height: 400px;
+    }
+    
+    .features-container {
+        gap: 20px;
+    }
+    
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    
     .brand-section {
         grid-column: 1 / -1;
         max-width: none;
     }
 }
 
-@media (max-width: 768px) {
-    .main-footer {
-        padding: 48px 5% 0;
+/* Mobile Landscape (640px - 767px) */
+@media (max-width: 767px) {
+    .main-nav {
+        flex-direction: column;
+        padding: 0.75rem 5%;
+        gap: 10px;
     }
+    
+    .logo {
+        height: 32px;
+    }
+    
+    .nav-links {
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        padding: 0 12px;
+        font-size: 12px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .login-btn {
+        padding: 6px 16px;
+        font-size: 13px;
+    }
+    
+    .hero {
+        padding-top: 120px;
+    }
+    
+    .hero-content {
+        max-width: 450px;
+        padding: 0 20px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .hero-title {
+        font-size: 42px;
+        line-height: 48px;
+        letter-spacing: -2.1px;
+    }
+    
+    .hero-text {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.8px;
+    }
+    
+    .start-line {
+        font-size: 13px;
+    }
+    
+    .cta-btn {
+        width: 180px;
+        height: 52px;
+        font-size: 17px;
+    }
+    
+    .hero-cards {
+        width: 420px;
+        height: 240px;
+    }
+    
+    .card-model,
+    .card-guitar {
+        width: 135px;
+        height: 175px;
+        top: 60px;
+    }
+    
+    .card-car {
+        width: 240px;
+        height: 200px;
+    }
+    
+    .section-header h2,
+    .how-it-works .section-title,
+    .testimonials .section-title,
+    .why-choose .section-title {
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: -1.6px;
+    }
+    
+    .highlight-deals,
+    .weitere-deals {
+        padding: 40px 20px;
+    }
+    
+    .deals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        min-height: 500px;
+    }
+    
+    .deal-card {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .card-image {
+        height: 180px;
+    }
+    
+    .card-content {
+        padding: 20px;
+    }
+    
+    .card-header h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .price {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    
+    .card-btn {
+        width: 100%;
+        height: 48px;
+        font-size: 15px;
+    }
+    
+    .filter-nav {
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+    
+    .filter-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+    
+    .how-it-works {
+        padding: 40px 20px;
+        padding-top: 120px;
+    }
+    
+    .how-it-works .section-description {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+    
+    .video-container {
+        height: 320px;
+    }
+    
+    .play-button,
+    .play-button img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .testimonials {
+        padding: 40px 3%;
+    }
+    
+    .testimonial-card {
+        padding: 24px;
+        margin: 0 8px;
+    }
+    
+    .testimonial-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .why-choose {
+        padding: 40px 3%;
+    }
+    
+    .features-container {
+        gap: 16px;
+    }
+    
+    .feature-card {
+        padding: 20px 24px;
+    }
+    
+    .feature-text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .main-footer {
+        padding: 40px 3% 0;
+    }
+    
+    .footer-content {
+        gap: 24px;
+    }
+}
 
+/* Mobile Portrait (480px - 639px) */
+@media (max-width: 639px) {
+    .main-nav {
+        padding: 0.75rem 4%;
+    }
+    
+    .nav-links a {
+        font-size: 11px;
+        padding: 0 10px;
+        height: 38px;
+        line-height: 38px;
+    }
+    
+    .hero-content {
+        max-width: 380px;
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -1.8px;
+    }
+    
+    .hero-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    
+    .hero-cards {
+        width: 350px;
+        height: 200px;
+    }
+    
+    .card-model,
+    .card-guitar {
+        width: 115px;
+        height: 145px;
+        top: 50px;
+    }
+    
+    .card-car {
+        width: 200px;
+        height: 170px;
+    }
+    
+    .section-header h2,
+    .how-it-works .section-title,
+    .testimonials .section-title,
+    .why-choose .section-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .deals-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .deal-card {
+        max-width: 340px;
+    }
+    
+    .video-container {
+        height: 280px;
+    }
+    
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-card {
+        width: 100%;
+        max-width: none;
+    }
+    
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 32px;
     }
-
+    
     .footer-column {
         text-align: center;
     }
-
+    
     .footer-column ul {
         text-align: center;
     }
-
+    
     .brand-description {
-        max-width: 500px;
+        max-width: 400px;
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     .newsletter-form {
-        max-width: 400px;
+        max-width: 350px;
         margin: 0 auto;
     }
 }
 
-/* Weitere Deals specific styles for filter transitions */
-.weitere-deals .deal-card {
-    opacity: 1;
-    transform: translateY(0);
-    will-change: opacity, transform;
+/* Small Mobile (320px - 479px) */
+@media (max-width: 479px) {
+    .main-nav {
+        padding: 0.5rem 3%;
+    }
+    
+    .logo {
+        height: 28px;
+    }
+    
+    .nav-links {
+        gap: 6px;
+    }
+    
+    .nav-links a {
+        font-size: 10px;
+        padding: 0 8px;
+        height: 36px;
+        line-height: 36px;
+    }
+    
+    .login-btn {
+        padding: 5px 12px;
+        font-size: 11px;
+    }
+    
+    .hero {
+        padding-top: 140px;
+    }
+    
+    .hero-content {
+        max-width: 300px;
+        padding: 0 10px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .start-line {
+        font-size: 12px;
+    }
+    
+    .hero-title {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -1.5px;
+    }
+    
+    .hero-text {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.5px;
+    }
+    
+    .cta-btn {
+        width: 160px;
+        height: 48px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    .hero-cards {
+        width: 290px;
+        height: 165px;
+    }
+    
+    .card-model,
+    .card-guitar {
+        width: 95px;
+        height: 120px;
+        top: 40px;
+    }
+    
+    .card-car {
+        width: 165px;
+        height: 140px;
+    }
+    
+    .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .section-header h2,
+    .how-it-works .section-title,
+    .testimonials .section-title,
+    .why-choose .section-title {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -1.2px;
+    }
+    
+    .highlight-deals,
+    .weitere-deals {
+        padding: 30px 15px;
+    }
+    
+    .deals-grid {
+        gap: 16px;
+        min-height: 400px;
+    }
+    
+    .deal-card {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .card-image {
+        height: 160px;
+    }
+    
+    .card-content {
+        padding: 16px;
+    }
+    
+    .card-header h3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    
+    .description {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    
+    .slot-tag {
+        font-size: 13px;
+    }
+    
+    .price {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    
+    .card-btn {
+        height: 46px;
+        font-size: 14px;
+    }
+    
+    .filter-nav {
+        gap: 8px;
+        margin-bottom: 28px;
+    }
+    
+    .filter-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+    
+    .how-it-works {
+        padding: 30px 15px;
+        padding-top: 110px;
+        margin-top: -80px;
+    }
+    
+    .how-it-works .section-description {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 28px;
+        padding: 0 10px;
+    }
+    
+    .video-container {
+        height: 220px;
+    }
+    
+    .play-button,
+    .play-button img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .testimonials,
+    .why-choose {
+        padding: 30px 2%;
+    }
+    
+    .testimonial-card {
+        padding: 20px;
+    }
+    
+    .client-image {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    
+    .star-rating img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .testimonial-text {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .client-info h4 {
+        font-size: 16px;
+    }
+    
+    .client-info span {
+        font-size: 14px;
+    }
+    
+    .feature-card {
+        padding: 18px 20px;
+        gap: 16px;
+    }
+    
+    .feature-icon {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .feature-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .main-footer {
+        padding: 30px 2% 0;
+    }
+    
+    .footer-content {
+        gap: 28px;
+        padding-bottom: 32px;
+    }
+    
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-logo {
+        height: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .brand-tagline {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+    
+    .brand-description {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        max-width: 280px;
+    }
+    
+    .swiss-badge-icon {
+        height: 42px;
+    }
+    
+    .footer-column ul a {
+        font-size: 14px;
+    }
+    
+    .newsletter-form {
+        max-width: 280px;
+    }
+    
+    .input-wrapper {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .input-wrapper input,
+    .input-wrapper button {
+        width: 100%;
+        height: 48px;
+    }
+    
+    .newsletter-disclaimer {
+        font-size: 13px;
+    }
+    
+    .social-links {
+        gap: 20px;
+        padding: 24px 0;
+    }
+    
+    .social-links a {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .social-links img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .copyright-bar {
+        padding: 20px 0;
+    }
+    
+    .copyright-bar p {
+        font-size: 12px;
+    }
 }
 
-.weitere-deals .deal-card.hidden {
-    display: none;
+/* Extra Small Mobile (below 320px) */
+@media (max-width: 319px) {
+    .hero-cards {
+        width: 250px;
+        height: 140px;
+    }
+    
+    .card-model,
+    .card-guitar {
+        width: 80px;
+        height: 100px;
+        top: 35px;
+    }
+    
+    .card-car {
+        width: 140px;
+        height: 120px;
+    }
+    
+    .hero-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .section-header h2,
+    .how-it-works .section-title,
+    .testimonials .section-title,
+    .why-choose .section-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
 }
-
-/* Preserve hover effect during filtering */
-.weitere-deals .deal-card:not(.hidden):hover {
-    transform: translateY(-4px) !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-}
-
-/* Ensure proper spacing in grid */
-.weitere-deals .deals-grid {
-    min-height: 600px;
-    transition: min-height 0.3s ease;
-}
-
